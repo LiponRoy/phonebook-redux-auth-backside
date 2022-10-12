@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema(
 	{
@@ -15,11 +15,11 @@ const UserSchema = new mongoose.Schema(
 		password: {
 			type: String,
 		},
-		confirmPassword: {
-			type: String,
-		},
+		// confirmPassword: {
+		// 	type: String,
+		// },
 	},
 	{ timestamps: true },
 );
 
-export default mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);

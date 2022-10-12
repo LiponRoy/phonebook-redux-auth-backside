@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const PhonebookSchema = new mongoose.Schema(
 	{
@@ -8,10 +8,6 @@ const PhonebookSchema = new mongoose.Schema(
 			unique: true,
 		},
 		name: {
-			type: String,
-			required: true,
-		},
-		email: {
 			type: String,
 			required: true,
 		},
